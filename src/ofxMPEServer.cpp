@@ -51,7 +51,7 @@ void ofxMPEServer::setup(string settingsFile)
 		  settings.getValue("settings:waitForAll", true),
 		  settings.getValue("settings:verbose", false));
 	
-	server.setMessageDelimiter("\n");
+	//server.setMessageDelimiter("\n");
 	ofAddListener(ofEvents().exit, this, &ofxMPEServer::exit);
 }
 
